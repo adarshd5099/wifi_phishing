@@ -18,7 +18,7 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 
     📝 Saves submitted usernames and passwords to log.txt
 
-    🖼 Serves a custom logo (iitjlogo.png) on the login page
+    🖼 Serves a custom logo (logo.png) on the login page
 
 🛠 Hardware & Software Requirements
 
@@ -41,13 +41,13 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 /ESP32-Captive-Portal
 │── ESP32_CaptivePortal.ino      # Main Arduino sketch
 │── data/
-│    ├── iitjlogo.png            # Logo displayed on the portal
+│    ├── logo.png            # Logo displayed on the portal
 │    └── log.txt                 # Saved credentials
 │── README.md
 
 🚀 How It Works
 
-    The ESP32 creates a Wi-Fi hotspot named IIT_JAMMÚ (no password by default).
+    The ESP32 creates a Wi-Fi hotspot named ABC_Admin (no password by default).
 
     The DNS server redirects all requests to the ESP32’s IP address.
 
@@ -57,7 +57,7 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 
     Logs can be viewed by visiting:
 
-    http://<ESP32_IP>/hitler98471358
+    http://192.168.4.1/ABC_Admin7901234
 
 🔧 Setup & Installation
 
@@ -69,7 +69,7 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 
     Install required libraries listed above.
 
-    Upload iitjlogo.png and an empty log.txt to ESP32’s LittleFS:
+    Upload logo.png and an empty log.txt to ESP32’s LittleFS:
 
     Using Little FS Command linetool
 
@@ -77,9 +77,7 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 
     Open Serial Monitor to see the assigned AP IP (default: 192.168.4.1).
 
-📸 Screenshot
 
-(Replace with your actual screenshot)
 ⚠ Legal & Ethical Notes
 
     This project can capture sensitive data.
@@ -88,6 +86,4 @@ Do NOT deploy in public networks or use it to collect credentials without permis
 
     The author is not responsible for any misuse.
 
-📜 License
 
-This project is licensed under the MIT License.
